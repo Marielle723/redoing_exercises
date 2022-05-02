@@ -1,4 +1,5 @@
 import React from "react";
+import Button from "./Button";
 
 function Account({ account }) {
   console.log(account.name);
@@ -9,7 +10,7 @@ function Account({ account }) {
         style={{
           backgroundColor: `${account.color}`,
           padding: 5,
-          borderRadius: 5,
+          borderRadius: 2,
           color: "white",
         }}
       >
@@ -23,11 +24,12 @@ function Account({ account }) {
             <li className="account-line " key={index}>
               <p>{op.date}</p>
               <p>{op.description}</p>
-              <p>{op.amount} €</p>
+              <p className="amount">{op.amount} €</p>
             </li>
           );
         })}
       </ul>
+      <Button />
     </main>
   );
 }

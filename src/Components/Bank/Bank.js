@@ -1,6 +1,7 @@
 import React from "react";
 import Header from "./Header";
 import Accounts from "./Accounts";
+import Button from "./Button";
 
 function Bank() {
   const accounts = [
@@ -60,7 +61,7 @@ function Bank() {
     },
   ];
   return (
-    <div>
+    <div className="app-bank">
       <Header />
       <Accounts accounts={accounts} />
     </div>
