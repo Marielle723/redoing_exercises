@@ -271,3 +271,17 @@ footer span {
   /* border: red solid 1px; */
   width: 90%;
 }
+
+/* PROGRAM TV */
+
+.header-logo-center {
+  border: red solid 2px;
+  height: 20%;
+  width: 100%;
+  text-align: center;
+}
+
+header img {
+  max-height: 100%;
+  object-fit: cover;
+}

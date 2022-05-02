@@ -1,7 +1,15 @@
-import React from "react";
+import React, { useState } from "react";
+import programs from "./programs.json";
+import ProgramHeader from "./ProgramHeader";
 
 function ProgramTV() {
-  return <div>ProgramTV</div>;
+  const [data, setData] = useState(programs);
+
+  return (
+    <div>
+      <ProgramHeader />
+    </div>
+  );
 }
 
 export default ProgramTV;
