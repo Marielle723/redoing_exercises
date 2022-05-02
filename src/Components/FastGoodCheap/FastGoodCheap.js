@@ -7,7 +7,7 @@ function FastGoodCheap() {
   const [cheap, setCheap] = useState(false);
 
   return (
-    <div className="side right-bottom">
+    <>
       <h1>How do you want your developer ?</h1>
       <div className="wrapper">
         <div className="box">
@@ -40,7 +40,7 @@ function FastGoodCheap() {
           <p>Cheap</p>
         </div>
       </div>
-    </div>
+    </>
   );
 }
 

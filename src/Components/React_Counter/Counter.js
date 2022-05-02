@@ -3,7 +3,7 @@ import React, { useState } from "react";
 function Counter() {
   const [counter, setCounter] = useState(0);
   return (
-    <div className="side letf-top">
+    <>
       <header>
         <h1>
           <span className="logo">&#128425;</span>React Counter
@@ -35,7 +35,7 @@ function Counter() {
           <span> Marielle</span>
         </p>
       </footer>
-    </div>
+    </>
   );
 }
 
