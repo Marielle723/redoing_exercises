@@ -1,23 +1,21 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import FastGoodCheap from "./Components/FastGoodCheap/FastGoodCheap";
+import Counter from "./Components/React_Counter/Counter";
+import Bank from "./Components/Bank/Bank";
+
+import { useState } from "react";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="main-container">
+      <Counter />
+
+      <div className="side right-top">
+        <Bank />
+      </div>
+      <div className="side left-bottom">
+        <h1>Smiley search</h1>
+      </div>
     </div>
   );
 }
