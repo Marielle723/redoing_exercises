@@ -199,7 +199,27 @@ footer span {
 }
 
 .user {
+  border: red solid 3px;
+  /* quand je fais display flex le logo disparait, pourquoi? */
+}
+
+.bank-account {
+  width: 95%;
+  margin: 0 auto;
+  box-shadow: 0px 0px 10px #222;
+}
+
+.account-head {
+  width: 90%;
   display: flex;
+  justify-content: space-between;
+}
+
+.account-operations {
+}
+
+.account-line {
+  display: flex;
+  justify-content: space-around;
   align-items: center;
-  justify-content: center;
 }
