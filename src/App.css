@@ -202,13 +202,25 @@ footer span {
   color: white;
 }
 
-.user h2 {
+.bank-user h2 {
   font-size: 0.6rem;
 }
 
-.user {
-  border: red solid 3px;
+.bank-user {
+  /* border: red solid 3px; */
+  display: flex;
+  width: 14%;
+  align-items: center;
+  justify-content: space-between;
+
   /* quand je fais display flex le logo disparait, pourquoi? */
+}
+
+.feather-user {
+  background-color: white;
+  border-radius: 50%;
+  padding: 2px;
+  height: 20px;
 }
 
 .account-head {

@@ -3,7 +3,7 @@ import Usericon from "./Usericon";
 
 function User({ userName }) {
   return (
-    <div className="user">
+    <div className="bank-user">
       <h2>{userName}</h2>
       <Usericon />
     </div>

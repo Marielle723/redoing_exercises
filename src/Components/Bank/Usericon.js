@@ -5,10 +5,10 @@ const Usericon = () => {
     <svg
       xmlns="http://www.w3.org/2000/svg"
       fill="none"
-      stroke="currentColor"
+      stroke="black"
       strokeLinecap="round"
       strokeLinejoin="round"
-      strokeWidth="2"
+      strokeWidth="1"
       className="feather feather-user"
       viewBox="0 0 24 24"
     >
