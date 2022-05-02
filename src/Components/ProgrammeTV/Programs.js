@@ -1,4 +1,5 @@
 import React from "react";
+import Program from "./Program";
 
 function Programs({ programs }) {
   console.log(programs);
@@ -6,7 +7,7 @@ function Programs({ programs }) {
     <main>
       <ul>
         {programs.map((program, index) => {
-          return <li>{program.time}</li>;
+          return <Program key={index} program={program} />;
         })}
       </ul>
     </main>
