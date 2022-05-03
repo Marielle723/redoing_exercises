@@ -18,9 +18,7 @@ function App() {
       </div>
 
       <div className="side left-bottom">
-        <h1>
-          <ProgramTV />
-        </h1>
+        <ProgramTV />
       </div>
 
       <div className="side right-bottom">

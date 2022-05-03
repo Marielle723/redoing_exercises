@@ -27,6 +27,8 @@
 
 .right-top {
   background-color: #aaa;
+  overflow: hidden;
+  overflow-y: scroll;
 }
 
 .right-bottom {
@@ -35,6 +37,8 @@
 
 .left-bottom {
   background-color: #ddd;
+  overflow: hidden;
+  overflow-y: scroll;
 }
 
 header {
@@ -63,8 +67,7 @@ h1 {
 }
 
 p {
-  font-size: 0.9rem;
-  margin: 0 10px;
+  font-size: 0.7rem;
 }
 
 .logo {
@@ -275,13 +278,46 @@ footer span {
 /* PROGRAM TV */
 
 .header-logo-center {
-  border: red solid 2px;
-  height: 20%;
+  /* border: red solid 2px; */
+  height: 15%;
   width: 100%;
-  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 header img {
   max-height: 100%;
   object-fit: cover;
+}
+
+.program {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  font-size: 0.7rem;
+  font-weight: 200;
+}
+
+.program-time {
+  width: 100px;
+  height: 100%;
+  text-align: center;
+  /* border: blue 1px solid; */
+}
+
+.program-title {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* border: #222 solid 4px; */
+  margin-left: 20px;
+  width: 200px;
+}
+
+.program-timing {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-right: 10px;
 }
