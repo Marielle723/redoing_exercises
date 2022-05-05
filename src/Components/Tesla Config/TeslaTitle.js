@@ -1,7 +1,7 @@
 import React from "react";
 
-function TeslaTitle() {
-  return <div>TeslaTitle</div>;
+function TeslaTitle({ title }) {
+  return <h1>{title}</h1>;
 }
 
 export default TeslaTitle;
