@@ -5,6 +5,7 @@ import Bank from "./Components/Bank/Bank";
 import ProgramTV from "./Components/ProgrammeTV/ProgramTV";
 
 import { useState } from "react";
+import TeslaConfig from "./Components/Tesla Config/TeslaConfig";
 
 function App() {
   return (
@@ -22,7 +23,7 @@ function App() {
       </div>
 
       <div className="side right-bottom">
-        <h1>Fast Good Cheap</h1>
+        <TeslaConfig />
       </div>
     </div>
   );
