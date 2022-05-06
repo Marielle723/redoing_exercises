@@ -2,7 +2,7 @@ import React from "react";
 import Button from "./Button";
 
 function Account({ account }) {
-  console.log(account.name);
+  // console.log(account.name);
   return (
     <main className="bank-account">
       <div

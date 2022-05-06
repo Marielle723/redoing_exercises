@@ -2,7 +2,7 @@ import React from "react";
 import Program from "./Program";
 
 function Programs({ programs }) {
-  console.log(programs);
+  // console.log(programs);
   return (
     <ul>
       {programs.map((program, index) => {
