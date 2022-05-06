@@ -15,7 +15,7 @@ function ColorSelection({ colorChoice }) {
           <li key={index}>
             <p>{colorSel} : </p>
             <p>
-              <ColorPrice colorChoice={colorChoice} />
+              <ColorPrice colorChoice={colorChoice} index={index} />
             </p>
           </li>
         );
