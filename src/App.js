@@ -1,11 +1,11 @@
 import "./App.css";
-import FastGoodCheap from "./Components/FastGoodCheap/FastGoodCheap";
+
 import Counter from "./Components/React_Counter/Counter";
 import Bank from "./Components/Bank/Bank";
 import ProgramTV from "./Components/ProgrammeTV/ProgramTV";
+import TeslaConfig from "./Components/TeslaConfig.js/TeslaConfig";
 
 import { useState } from "react";
-import TeslaConfig from "./Components/Tesla Config/TeslaConfig";
 
 function App() {
   return (
