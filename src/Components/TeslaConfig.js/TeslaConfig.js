@@ -3,6 +3,7 @@ import TeslaTitle from "./TeslaTitle";
 import TeslaSubtitle from "./TeslaSubtitle";
 import TeslaButton from "./TeslaButton";
 import TeslaInput from "./TeslaInput";
+import TeslaTotal from "./TeslaTotal";
 
 function TeslaConfig() {
   const car = [
@@ -15,29 +16,30 @@ function TeslaConfig() {
     { name: "Noir Uni", price: 1000 },
   ];
 
+  const [carSelected, setCarSelected] = useState(car[0].price);
+  const [colorSelected, setColorSelected] = useState(color[0].price);
+
   return (
     <div className="tesla-config">
       <TeslaTitle title="Tesla Config" />
       <TeslaSubtitle subtitle="Sélectionner votre véhicule" />
 
-      <TeslaInput type={car} />
-
-      {/* <TeslaButton buttonName={car[0].carName} buttonPrice={car[0].carPrice} />
-      <TeslaButton buttonName={car[1].carName} buttonPrice={car[1].carPrice} /> */}
+      <TeslaInput
+        type={car}
+        carSelected={carSelected}
+        setCarSelected={setCarSelected}
+      />
 
       <TeslaSubtitle subtitle="Sélectionner la couleur" />
-
-      <TeslaInput type={color} />
-
-      {/* 
-      <TeslaButton
-        buttonName={color[0].colorName}
-        buttonPrice={color[0].colorPrice}
+      <TeslaInput
+        type={color}
+        colorSelected={colorSelected}
+        setColorSelected={setColorSelected}
       />
-      <TeslaButton
-        buttonName={color[1].colorName}
-        buttonPrice={color[1].colorPrice}
-      /> */}
+
+      <TeslaTotal carSelected={carSelected} colorSelected={colorSelected} />
+
+      {/* <span>BUY !</span> */}
     </div>
   );
 }

@@ -15,6 +15,7 @@ function TeslaInput(props) {
               name={tesla.name}
               price={tesla.price}
               type={props.type}
+              index={index}
             />
           </li>
         );
