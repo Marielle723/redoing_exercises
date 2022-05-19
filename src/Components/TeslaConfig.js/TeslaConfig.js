@@ -16,7 +16,7 @@ function TeslaConfig() {
   ];
 
   return (
-    <div>
+    <div className="tesla-config">
       <TeslaTitle title="Tesla Config" />
       <TeslaSubtitle subtitle="Sélectionner votre véhicule" />
 

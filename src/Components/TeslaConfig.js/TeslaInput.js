@@ -7,7 +7,11 @@ function TeslaInput(props) {
       {props.type.map((tesla, index) => {
         return (
           <li key={index}>
-            <TeslaButton name={tesla.name} price={tesla.price} />
+            <TeslaButton
+              name={tesla.name}
+              price={tesla.price}
+              type={props.type}
+            />
           </li>
         );
         // <input

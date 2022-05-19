@@ -321,3 +321,38 @@ header img {
   align-items: center;
   margin-right: 10px;
 }
+
+/* TESLA CONFIG */
+
+/* input[type="radio"].tesla-radio {
+  opacity: 0;
+  position: absolute;
+  cursor: pointer;
+}
+
+input[type="radio"].tesla-radio:checked + label {
+  color: red;
+} */
+
+.tesla-config {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  overflow-y: scroll;
+  border: navy solid 2px;
+}
+
+.tesla-config li {
+  list-style: none;
+}
+.config-button {
+  background-color: #fff;
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  padding: 3% 10%;
+  align-items: center;
+  border-radius: 20px;
+  margin-bottom: 5px;
+}
