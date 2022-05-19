@@ -2,16 +2,18 @@ import React, { useState } from "react";
 import TeslaButtonName from "./TeslaButtonName";
 import TeslaButtonPrice from "./TeslaButtonPrice";
 
-function TeslaButton({ name, price, type }) {
+function TeslaButton({ name, price, type, current, setCurrent }) {
   const handleChange = (val) => {
     setTotal(total + val);
   };
 
   const [total, setTotal] = useState(0);
-  const [selectedOption, setSelectedOption] = useState("");
 
   return (
-    <button className="config-button">
+    <button
+      className={current === name ? "config-button active" : "config-button"}
+      onClick={() => setCurrent(name)}
+    >
       <TeslaButtonName name={name} /> -
       <TeslaButtonPrice price={price} />
     </button>

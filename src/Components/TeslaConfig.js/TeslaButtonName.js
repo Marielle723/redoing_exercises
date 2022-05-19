@@ -1,7 +1,7 @@
 import React from "react";
 
 function TeslaButtonName(props) {
-  return <h4>{props.name}</h4>;
+  return <p>{props.name}</p>;
 }
 
 export default TeslaButtonName;

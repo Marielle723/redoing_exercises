@@ -350,9 +350,18 @@ input[type="radio"].tesla-radio:checked + label {
   width: 90%;
   margin: 0 auto;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   padding: 3% 10%;
   align-items: center;
   border-radius: 20px;
   margin-bottom: 5px;
+  transition: border 0.2s;
+}
+
+.config-button:hover {
+  cursor: pointer;
+}
+
+.active {
+  border: blue 1px solid;
 }
