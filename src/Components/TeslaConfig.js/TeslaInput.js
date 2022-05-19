@@ -1,4 +1,5 @@
 import React from "react";
+import TeslaButton from "./TeslaButton";
 
 function TeslaInput(props) {
   return (
@@ -6,9 +7,7 @@ function TeslaInput(props) {
       {props.type.map((tesla, index) => {
         return (
           <li key={index}>
-            <button>
-              {tesla.name} - {tesla.price} €
-            </button>
+            <TeslaButton name={tesla.name} price={tesla.price} />
           </li>
         );
         // <input

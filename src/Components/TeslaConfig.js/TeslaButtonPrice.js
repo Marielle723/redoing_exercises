@@ -1,7 +1,13 @@
 import React from "react";
 
 function TeslaButtonPrice(props) {
-  return <p>{props.buttonPrice}</p>;
+  const currency = "€";
+  return (
+    <p>
+      {props.price}
+      {currency}
+    </p>
+  );
 }
 
 export default TeslaButtonPrice;

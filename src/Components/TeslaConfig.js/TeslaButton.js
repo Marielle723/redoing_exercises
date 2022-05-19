@@ -2,10 +2,11 @@ import React from "react";
 import TeslaButtonName from "./TeslaButtonName";
 import TeslaButtonPrice from "./TeslaButtonPrice";
 
-function TeslaButton(props) {
+function TeslaButton({ name, price }) {
   return (
     <button>
-      {props.buttonName}-{props.buttonPrice}€
+      <TeslaButtonName name={name} /> -
+      <TeslaButtonPrice price={price} />
     </button>
   );
 }
