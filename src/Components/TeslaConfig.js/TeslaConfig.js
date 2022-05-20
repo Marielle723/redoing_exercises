@@ -16,8 +16,8 @@ function TeslaConfig() {
     { name: "Noir Uni", price: 1000 },
   ];
 
-  const [carSelected, setCarSelected] = useState(car[0].price);
-  const [colorSelected, setColorSelected] = useState(color[0].price);
+  const [carCurrent, setCarCurrent] = useState(car[0].price);
+  const [colorCurrent, setColorCurrent] = useState(color[1].price);
 
   return (
     <div className="tesla-config">
@@ -26,18 +26,20 @@ function TeslaConfig() {
 
       <TeslaInput
         type={car}
-        carSelected={carSelected}
-        setCarSelected={setCarSelected}
+        genre="car"
+        carCurrent={carCurrent}
+        setCarCurrent={setCarCurrent}
       />
 
       <TeslaSubtitle subtitle="Sélectionner la couleur" />
       <TeslaInput
         type={color}
-        colorSelected={colorSelected}
-        setColorSelected={setColorSelected}
+        genre="color"
+        colorCurrent={colorCurrent}
+        setColorCurrent={setColorCurrent}
       />
 
-      <TeslaTotal carSelected={carSelected} colorSelected={colorSelected} />
+      <TeslaTotal carCurrent={carCurrent} colorCurrent={colorCurrent} />
 
       {/* <span>BUY !</span> */}
     </div>

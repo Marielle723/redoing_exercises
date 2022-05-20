@@ -1,9 +1,8 @@
 import React, { useState } from "react";
 
-function TeslaTotal(carSelected, colorSelected) {
-  const [total, setTotal] = useState(0);
-
-  return <p>{carSelected} €</p>;
+function TeslaTotal({ carCurrent, colorCurrent }) {
+  const total = carCurrent + colorCurrent;
+  return <p> {total} €</p>;
 }
 
 export default TeslaTotal;

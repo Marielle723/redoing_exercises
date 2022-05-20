@@ -1,20 +1,28 @@
 import React, { useState } from "react";
 import TeslaButton from "./TeslaButton";
 
-function TeslaInput(props) {
-  const [current, setCurrent] = useState(props.type[0].name);
+function TeslaInput({
+  carCurrent,
+  colorCurrent,
+  setCarCurrent,
+  setColorCurrent,
+  type,
+  genre,
+}) {
+  // const [carCurrent, setCarCurrent] = useState(props.type[0].name);
+  // const [colorCurrent, setColorCurrent] = useState(props.type[1].name);
 
   return (
     <ul>
-      {props.type.map((tesla, index) => {
+      {type.map((tesla, index) => {
         return (
           <li key={index}>
             <TeslaButton
-              current={current}
-              setCurrent={setCurrent}
+              current={genre === "car" ? carCurrent : colorCurrent}
+              setCurrent={genre === "car" ? setCarCurrent : setColorCurrent}
               name={tesla.name}
               price={tesla.price}
-              type={props.type}
+              type={type}
               index={index}
             />
           </li>
