@@ -39,9 +39,10 @@ function TeslaConfig() {
         setColorCurrent={setColorCurrent}
       />
 
-      <TeslaTotal carCurrent={carCurrent} colorCurrent={colorCurrent} />
-
-      {/* <span>BUY !</span> */}
+      <div className="total">
+        <TeslaTotal carCurrent={carCurrent} colorCurrent={colorCurrent} />
+        <button className="buy">BUY !</button>
+      </div>
     </div>
   );
 }
