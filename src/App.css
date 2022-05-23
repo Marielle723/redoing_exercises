@@ -23,6 +23,8 @@
 
 .letf-top {
   background-color: #ccc;
+  overflow: hidden;
+  overflow-y: scroll;
 }
 
 .right-top {
@@ -121,7 +123,6 @@ footer span {
 .wrapper {
   width: 100%;
   height: 90%;
-  border: red solid 2px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -129,7 +130,6 @@ footer span {
 }
 
 .box {
-  border: 10px solid blue;
   width: 100%;
   height: 100px;
   display: flex;
@@ -140,49 +140,6 @@ footer span {
 
 .box p {
   text-transform: uppercase;
-}
-
-/*TOGGLE SWITCH CSS*/
-.toggle {
-  --toggle__width: 40px;
-  --toggle__height: calc(var(--toggle__width) / 2);
-  --toggle__border-radius: calc(var(--toggle__height) / 2);
-  display: inline-block;
-  cursor: pointer;
-}
-
-.toggle-input {
-  display: none;
-}
-
-.toggle-fill {
-  position: relative;
-  width: var(--toggle__width);
-  height: var(--toggle__height);
-  border-radius: var(--toggle__border-radius);
-  background-color: #ccc;
-  transition: background 0.2s;
-}
-
-/* .toggle-input:checked ~ .toggle-fill {
-  background: #ccc;
-} */
-
-.toggle-fill::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: var(--toggle__height);
-  width: var(--toggle__height);
-  background-color: #fff;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
-  border-radius: var(--toggle__border-radius);
-  transition: transform 0.2s;
-}
-
-.toggle-input:checked ~ .toggle-fill::after {
-  transform: translateX(var(--toggle__height));
 }
 
 /* MY BANK */
@@ -391,4 +348,32 @@ input[type="radio"].tesla-radio:checked + label {
 
 .total-size {
   font-size: 25px;
+}
+
+/* FAST GOOD CHEAP */
+
+input[type="checkbox"] {
+  margin-right: 10px;
+}
+
+input[type="checkbox"],
+label {
+  border: #222 1px solid;
+  width: 50%;
+}
+
+.text-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 15px auto;
+  border: solid 1px red;
+}
+
+.maj {
+  text-transform: uppercase;
+}
+
+.bold {
+  font-weight: 700;
 }

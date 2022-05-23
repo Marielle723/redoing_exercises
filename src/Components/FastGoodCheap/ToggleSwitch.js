@@ -1,36 +1,18 @@
 import React, { useState } from "react";
 
-function ToggleSwitch(props) {
-  const [checked, setChecked] = useState(false);
-  console.log("checked " + checked);
-
-  const handleChange = () => {
-    if (props.label === "fast") {
-      props.setFast(!props.fast);
-      setChecked(!props.fast);
-    } else if (props.label === "good") {
-      props.setGood(!props.good);
-      setChecked(!props.good);
-    } else if (props.label === "cheap") {
-      props.setCheap(!props.cheap);
-    }
-  };
+function ToggleSwitch({ label, checked, setChecked }) {
+  // const [checked, setChecked] = useState(false);
 
   return (
-    <div>
-      <label className="toggle">
-        {props.label}
+    <div className="text-center maj bold">
+      <label>
         <input
-          className="toggle-input"
-          name="toggleSwitch"
           type="checkbox"
+          id="checkbox"
           value={checked}
-          onChange={handleChange}
+          onChange={() => setChecked(!checked)}
         />
-        <div
-          className="toggle-fill"
-          style={{ backgroundColor: checked && `${props.color}` }}
-        ></div>
+        {label}
       </label>
     </div>
   );
