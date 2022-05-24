@@ -377,3 +377,62 @@ label {
 .bold {
   font-weight: 700;
 }
+
+/* BIRTHDAY REMINDER */
+
+.br {
+  background-color: #9b115b;
+  width: 100%;
+  height: 100%;
+  margin-top: -120px;
+  overflow: hidden;
+  overflow-y: scroll;
+}
+
+.br .container {
+  width: 70%;
+  background-color: white;
+  box-shadow: 0 0 5px #222;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  padding: 20px;
+}
+
+.br button {
+  width: 50%;
+  color: white;
+  background-color: #9b115b;
+  font-size: 0.8rem;
+  text-transform: capitalize;
+  padding: 3px 10px;
+  border: none;
+}
+
+.br h3 {
+  font-size: 0.7rem;
+  margin-bottom: 5px;
+  text-decoration: underline;
+  text-decoration-color: #9b115b;
+  text-decoration-thickness: 5px;
+}
+
+.br-list h2 {
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+.br article {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.br img {
+  width: 25%;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-right: 10px;
+}
