@@ -5,6 +5,7 @@ import Bank from "./Components/Bank/Bank";
 import ProgramTV from "./Components/ProgrammeTV/ProgramTV";
 import TeslaConfig from "./Components/TeslaConfig.js/TeslaConfig";
 import BirthdayReminder from "./BirthdayReminder/BirthdayReminder";
+import LoremIpsumGen from "./Components/LoremIpsum_Generator/LoremIpsumGen";
 
 import { useState } from "react";
 import FastGoodCheap from "./Components/FastGoodCheap/FastGoodCheap";
@@ -47,7 +48,9 @@ function App() {
           <BirthdayReminder />
         </div>
 
-        <div className="side right-top"></div>
+        <div className="side right-top">
+          <LoremIpsumGen />
+        </div>
 
         <div className="side left-bottom">Emoji Search</div>
 

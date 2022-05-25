@@ -399,6 +399,7 @@ label {
   align-items: center;
   gap: 20px;
   padding: 20px;
+  position: relative;
 }
 
 .br button {
@@ -436,3 +437,46 @@ label {
   border-radius: 50%;
   margin-right: 10px;
 }
+
+.artist-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #9b115b;
+  opacity: 0.9;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  border: #222 solid 3px;
+  padding: 25px 20px;
+}
+
+.close-btn {
+  position: absolute;
+  right: 5px;
+  top: 5px;
+  color: white;
+  border: 1px solid #222;
+  padding: 1px 2px;
+}
+
+.submit-btn:hover {
+  cursor: pointer;
+}
+
+.close-btn:hover {
+  cursor: pointer;
+}
+
+.artist-form label {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 300px;
+  text-align: left;
+}
+
+/*LOREM IPSUM PROJECT*/
+
+/*IDEES : SCRAPPER LE WEB CA POUR DES PHRASES RANDOM DE A LA RECHERCHE DU TEMPS PERDU*/
