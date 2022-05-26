@@ -480,3 +480,30 @@ label {
 /*LOREM IPSUM PROJECT*/
 
 /*IDEES : SCRAPPER LE WEB CA POUR DES PHRASES RANDOM DE A LA RECHERCHE DU TEMPS PERDU*/
+.section-center {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  gap: 20px;
+}
+
+.section-center h3 {
+  text-transform: uppercase;
+  margin-top: 20px;
+}
+
+.lorem-text {
+  width: 95%;
+  color: #222;
+  border-top: none;
+  border-bottom: none;
+  border-left: #222 solid 2px;
+  border-right: #222 solid 2px;
+  padding: 10px;
+}
+
+.lorem-par {
+  margin-bottom: 10px;
+}

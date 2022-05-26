@@ -1,7 +1,8 @@
 import React from "react";
 
 function ArtistForm({ artist, setArtist }) {
-  const handleSubmit = () => {
+  const handleSubmit = (e) => {
+    e.preventDefault();
     alert("Submit");
   };
 

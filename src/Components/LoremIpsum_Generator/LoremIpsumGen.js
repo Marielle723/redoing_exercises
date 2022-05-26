@@ -7,16 +7,41 @@ function LoremIpsumGen() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    console.log("Hello World");
+    let amount = parseInt(count);
+    let textDisplayed = DummyText.slice(0, amount);
+    setText(textDisplayed);
   };
 
   return (
     <section className="section-center">
-      <h3>Tired of boring lorem ipsum</h3>
+      <h3>Tired of boring lorem ipsum ?</h3>
       <form className="lorem-form" onSubmit={handleSubmit}>
-        <label htmlFor="amount">Paragraph:</label>
-        <input type="number" name="amount" id="amount" />
+        <label htmlFor="amount">Paragraphs:</label>
+        <input
+          type="number"
+          name="amount"
+          id="amount"
+          max={DummyText.length}
+          min={0}
+          value={count}
+          onChange={(e) => setCount(e.target.value)}
+        />
+        <button type="submit" className="lorem-btn">
+          generate
+        </button>
+        <button type="button" className="reset-btn" onClick={() => setText([])}>
+          reset
+        </button>
       </form>
+      <article className="lorem-text">
+        {text.map((paragraph, index) => {
+          return (
+            <p key={index} className="lorem-par">
+              {paragraph}
+            </p>
+          );
+        })}
+      </article>
     </section>
   );
 }
