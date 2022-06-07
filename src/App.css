@@ -507,3 +507,63 @@ label {
 .lorem-par {
   margin-bottom: 10px;
 }
+
+/* TIM BURTON MOVIE */
+
+.movie-section-center {
+  /* border: red 2px solid; */
+  text-align: center;
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  gap: 20px;
+  height: 350px;
+  position: relative;
+}
+
+.movie-img {
+  height: 30vh;
+  object-fit: cover;
+}
+
+.movie-section-center article {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: var(--transition);
+}
+
+article.activeSlide {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+article.lastSlide {
+  transform: translateX(-100%);
+}
+
+article.nextSlide {
+  transform: translateX(100%);
+}
+
+.slider-btn {
+  /* border: blue solid 3px; */
+  margin-top: 45px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: absolute;
+  width: 100%;
+  padding: 0 40px;
+  z-index: 3;
+}
+
+.slider-btn button {
+  background: black;
+  color: green;
+  border: none;
+  padding: 5px;
+}
