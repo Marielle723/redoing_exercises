@@ -76,4 +76,56 @@ export default [
     synopsis:
       "Vous avez un rendez-vous très important. Alice, désormais âgée de 19 ans, retourne dans le monde fantastique qu'elle a découvert quand elle était enfant. Elle y retrouve ses amis le Lapin Blanc, Bonnet Blanc et Blanc Bonnet, le Loir, la Chenille, le Chat du Cheshire et, bien entendu, le Chapelier Fou. Alice s'embarque alors dans une aventure extraordinaire où elle accomplira son destin : mettre fin au règne de terreur de la Reine Rouge.",
   },
+
+  {
+    id: 7,
+    title: "Sweeney Todd : Le Diabolique Barbier de Fleet Street ",
+    image:
+      "https://res.cloudinary.com/djiovcgny/image/upload/v1654801128/Tim%20Burton/sweeney_todd_paplfe.jpg",
+    date: "23/01/2008",
+    genre: "Drame, Horreur",
+    duration: "1h 55m",
+    authors: "Unknown",
+    synopsis:
+      "Ne jamais oublier. Ne jamais pardonner. Issue du folklore anglais, « Sweeney Todd » raconte l'histoire morbide d'un barbier, Benjamin Barker, condamné au XIXe siècle à tort par un juge corrompu au bagne en Australie, d'où il s'évade quinze ans plus tard. Décidé à retrouver sa femme et son enfant, il retourne en Angleterre sous le nom de Sweeney Todd, mais découvre que le fameux juge est sur le point d'épouser sa fille ! Désespéré, il plonge peu à peu dans la folie et décide de prendre sa vengeance. Se met alors en place un monstrueux carnage…Avec la collaboration de Madame Lovett, amoureuse de lui depuis toujours, il tranche la gorge de ses clients, pendant qu'elle accommode les corps dans ses fameuses tourtes à la viande.",
+  },
+
+  {
+    id: 8,
+    title: "Cinema16: American Short Films",
+    image:
+      "https://res.cloudinary.com/djiovcgny/image/upload/v1654801128/Tim%20Burton/cinema16_y0cp2m.jpg",
+    date: "05/06/2006",
+    genre: "",
+    duration: "3h 29m",
+    authors: "Unknown",
+    synopsis:
+      "CINEMA16 celebrates the short film by showcasing some of the best classic and award-winning shorts on DVD. With over three hours of films CINEMA16: AMERICAN SHORT FILMS is essential viewing for anyone with an interest in the moving image. Films include Gus Van Sant's 1982 adaptation of a William S. Burroughs short story, The Discipline Of DE, Tim Burton's early stop motion animated classic Vincent, George Lucas' USC short Freiheit, Alexander Payne's previously unreleased UCLA graduation short Carmen, Paperboys by Mike Mills, D.A. Pennebaker's Duke Ellington scored Daybreak Express, Todd Solondz's NYU short Feelings, along with Oscar Winner The Lunch Date by Adam Davidson, Stefan Nadelman's multi- award winning documentary Terminal Bar, Joe Nussbaum's cult classic George Lucas In Love and 2006 Sundance Winner The Wraith Of Cobble Hill by Adam Parrish King. Films are subtitled in French, German, Italian, Spanish and Japanese, and include commentaries from many of the directors involved.",
+  },
+
+  {
+    id: 9,
+    title: "Les Noces funèbres",
+    image:
+      "https://res.cloudinary.com/djiovcgny/image/upload/v1654801128/Tim%20Burton/les_noces_fun%C3%A8bres_pxudoq.jpg",
+    date: "19/10/2005",
+    genre: "Romance, Fantastique, Animation",
+    duration: "1h 15m",
+    authors: "Unknown",
+    synopsis:
+      "Un malentendu fatal. Victor découvre le monde de l'au-delà après avoir épousé, sans le vouloir, le cadavre d'une mystérieuse mariée. Durant ce temps, sa promise, Victoria l'attend désespérément dans le monde des vivants.",
+  },
+
+  {
+    id: 10,
+    title: "Charlie et la Chocolaterie",
+    image:
+      "https://res.cloudinary.com/djiovcgny/image/upload/v1654801128/Tim%20Burton/Charlie_et_la_chocolaterie_cwci9o.jpg",
+    date: "13/07/2005",
+    genre: "Aventure, Comédie, Familial, Fantastique",
+    duration: "1h 56m",
+    authors: "Roald Dahl",
+    synopsis:
+      "Vous prendrez goût à l'aventure. Charlie est un enfant issu d'une famille pauvre. Travaillant pour subvenir aux besoins des siens, il doit économiser chaque penny, et ne peut s'offrir les friandises dont raffolent les enfants de son âge. Pour obtenir son comptant de sucreries, il participe à un concours organisé par l'inquiétant Willy Wonka, le propriétaire de la fabrique de chocolat de la ville. Celui qui découvrira l'un des cinq tickets d'or que Wonka a caché dans les barres de chocolat de sa fabrication gagnera une vie de sucreries.",
+  },
 ];
