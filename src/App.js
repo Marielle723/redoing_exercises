@@ -8,6 +8,7 @@ import BirthdayReminder from "./BirthdayReminder/BirthdayReminder";
 import LoremIpsumGen from "./Components/LoremIpsum_Generator/LoremIpsumGen";
 
 import Slider from "./Components/Slider/Slider";
+import Navbar from "./Components/Navbar/Navbar";
 import FastGoodCheap from "./Components/FastGoodCheap/FastGoodCheap";
 
 function App() {
@@ -56,7 +57,9 @@ function App() {
           <Slider />
         </div>
 
-        <div className="side right-bottom">Convertisseurs</div>
+        <div className="side right-bottom">
+          <Navbar />
+        </div>
       </div>
     </>
   );

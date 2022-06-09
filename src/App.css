@@ -567,3 +567,21 @@ article.nextSlide {
   border: none;
   padding: 5px;
 }
+
+/*NAVBAR*/
+.nav-center {
+  width: 100%;
+  height: 60px;
+  border: black solid 3px;
+}
+.nav-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.nav-header img {
+  height: 60px;
+  object-fit: contain;
+  /* border: #222 solid 2px; */
+}
