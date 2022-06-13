@@ -13,7 +13,7 @@ function ToDo({ todo, toggleTodo }) {
           checked={todo.complete}
           onChange={handleTodoClick}
         />
-        {todo}
+        {todo.name}
       </label>
     </div>
   );

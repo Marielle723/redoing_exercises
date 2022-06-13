@@ -5,7 +5,7 @@ function Todos({ todos, toggleTodo }) {
   return (
     <div>
       {todos.map((todo) => {
-        return <ToDo key={todo.id} todo={todo.name} toggleTodo={toggleTodo} />;
+        return <ToDo key={todo.id} todo={todo} toggleTodo={toggleTodo} />;
       })}
     </div>
   );

@@ -28,8 +28,9 @@ function TodoList() {
     const name = todoNameRef.current.value;
     if (name === " ") return;
     setTodos((prevTodos) => {
-      return [...prevTodos, { id: 1, name: name, complete: false }];
+      return [...prevTodos, { id: uuidv4(), name: name, complete: false }];
     });
+    todoNameRef.current.value = null;
   };
 
   const handleClearTodos = () => {
@@ -38,7 +39,7 @@ function TodoList() {
   };
 
   return (
-    <div>
+    <div className="title-center">
       <h1>To Do List</h1>
       <Todos todos={todos} toggleTodo={toggleTodo} />
       <input ref={todoNameRef} type="text" />
