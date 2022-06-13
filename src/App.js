@@ -4,6 +4,7 @@ import Counter from "./Components/React_Counter/Counter";
 import Bank from "./Components/Bank/Bank";
 import ProgramTV from "./Components/ProgrammeTV/ProgramTV";
 import TeslaConfig from "./Components/TeslaConfig.js/TeslaConfig";
+import TodoList from "./Components/ToDoList/TodoList";
 import BirthdayReminder from "./BirthdayReminder/BirthdayReminder";
 import LoremIpsumGen from "./Components/LoremIpsum_Generator/LoremIpsumGen";
 
@@ -37,7 +38,9 @@ function App() {
           <FastGoodCheap />
         </div>
 
-        <div className="side right-top">Simple Form</div>
+        <div className="side right-top">
+          <TodoList />
+        </div>
 
         <div className="side left-bottom">Emoji Search</div>
 

@@ -352,11 +352,11 @@ input[type="radio"].tesla-radio:checked + label {
 
 /* FAST GOOD CHEAP */
 
-input[type="checkbox"] {
+.text-center input[type="checkbox"] {
   margin-right: 10px;
 }
 
-input[type="checkbox"],
+.text-center input[type="checkbox"],
 label {
   border: #222 1px solid;
   width: 50%;
