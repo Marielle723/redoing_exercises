@@ -7,9 +7,9 @@ import TeslaConfig from "./Components/TeslaConfig.js/TeslaConfig";
 import TodoList from "./Components/ToDoList/TodoList";
 import BirthdayReminder from "./BirthdayReminder/BirthdayReminder";
 import LoremIpsumGen from "./Components/LoremIpsum_Generator/LoremIpsumGen";
-
+import Calculator from "./Components/Calculator/Calculator";
 import Slider from "./Components/Slider/Slider";
-import Navbar from "./Components/Navbar/Navbar";
+
 import FastGoodCheap from "./Components/FastGoodCheap/FastGoodCheap";
 
 function App() {
@@ -61,7 +61,7 @@ function App() {
         </div>
 
         <div className="side right-bottom">
-          <Navbar />
+          <Calculator />
         </div>
       </div>
     </>
