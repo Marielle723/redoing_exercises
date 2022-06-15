@@ -13,7 +13,14 @@ function BirthdayReminder() {
         <h3>{people.length} artists with saturn in the 5th house</h3>
         <List people={people} />
         <button onClick={() => setArtist(true)}>Add an Artist</button>
-        {artist && <ArtistForm artist={artist} setArtist={setArtist} />}
+        {artist && (
+          <ArtistForm
+            artist={artist}
+            setArtist={setArtist}
+            people={people}
+            setPeople={setPeople}
+          />
+        )}
       </section>
     </main>
   );
