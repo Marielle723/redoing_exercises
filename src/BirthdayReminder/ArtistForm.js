@@ -4,6 +4,8 @@ function ArtistForm({ artist, setArtist, setPeople, people }) {
   const [name, setName] = useState("");
   const [dob, setDob] = useState("");
   const [activity, setActivity] = useState("");
+  const [image, setImage] = useState("");
+  const [cloudImg, setCloudImg] = useState("");
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -14,6 +16,7 @@ function ArtistForm({ artist, setArtist, setPeople, people }) {
       name: name,
       dob: dob,
       activity: activity,
+      image: cloudImg,
     });
     setPeople(newPeople);
   };
@@ -57,9 +60,26 @@ function ArtistForm({ artist, setArtist, setPeople, people }) {
         </label>
 
         <label htmlFor="picture">
-          Picture:
-          <input type="file" id="picture" />
+          Picture from computer:
+          <input
+            type="file"
+            id="picture"
+            accept="image/*"
+            value={image}
+            onChange={(e) => setImage(e.target.files[0])}
+          />
         </label>
+
+        <label htmlFor="picture">
+          Picture from cloud :
+          <input
+            type="text"
+            id="cloudPic"
+            value={cloudImg}
+            onChange={(e) => setCloudImg(e.target.value)}
+          />
+        </label>
+
         <button className="submit-btn">Submit</button>
       </form>
     </div>
