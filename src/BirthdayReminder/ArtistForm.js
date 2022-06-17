@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import axios from "axios";
 
 function ArtistForm({ artist, setArtist, setPeople, people }) {
   const [name, setName] = useState("");
@@ -6,6 +7,8 @@ function ArtistForm({ artist, setArtist, setPeople, people }) {
   const [activity, setActivity] = useState("");
   const [image, setImage] = useState("");
   const [cloudImg, setCloudImg] = useState("");
+  const [fileImg, setFileImg] = useState(false);
+  const [linkImg, setLinkImg] = useState(true);
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -21,7 +24,15 @@ function ArtistForm({ artist, setArtist, setPeople, people }) {
     setPeople(newPeople);
   };
 
-  console.log(people);
+  const handleFileImg = () => {
+    setFileImg(!fileImg);
+    setLinkImg(false);
+  };
+
+  const handleLinkImg = () => {
+    setLinkImg(!linkImg);
+    setFileImg(false);
+  };
 
   return (
     <div className="artist-form">
@@ -38,7 +49,6 @@ function ArtistForm({ artist, setArtist, setPeople, people }) {
             onChange={(e) => setName(e.target.value)}
           />
         </label>
-
         <label htmlFor="dob">
           Date of Birth:
           <input
@@ -48,7 +58,6 @@ function ArtistForm({ artist, setArtist, setPeople, people }) {
             onChange={(e) => setDob(e.target.value)}
           />
         </label>
-
         <label htmlFor="activity">
           Activity:
           <input
@@ -58,28 +67,44 @@ function ArtistForm({ artist, setArtist, setPeople, people }) {
             onChange={(e) => setActivity(e.target.value)}
           />
         </label>
-
         <label htmlFor="picture">
+          <input
+            type="checkbox"
+            name="picChoice"
+            id="file"
+            checked={fileImg}
+            onChange={handleFileImg}
+          />
           Picture from computer:
-          <input
-            type="file"
-            id="picture"
-            accept="image/*"
-            value={image}
-            onChange={(e) => setImage(e.target.files[0])}
-          />
+          {fileImg && (
+            <input
+              type="file"
+              id="picture"
+              accept="image/*"
+              value={image}
+              onChange={(e) => setImage(e.target.files[0])}
+            />
+          )}
         </label>
-
+        OU
         <label htmlFor="picture">
-          Picture from cloud :
           <input
-            type="text"
-            id="cloudPic"
-            value={cloudImg}
-            onChange={(e) => setCloudImg(e.target.value)}
+            type="checkbox"
+            name="picChoice"
+            id="link"
+            checked={linkImg}
+            onChange={handleLinkImg}
           />
+          Picture from cloud :
+          {linkImg && (
+            <input
+              type="text"
+              id="cloudPic"
+              value={cloudImg}
+              onChange={(e) => setCloudImg(e.target.value)}
+            />
+          )}
         </label>
-
         <button className="submit-btn">Submit</button>
       </form>
     </div>
