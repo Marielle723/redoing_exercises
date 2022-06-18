@@ -649,3 +649,32 @@ article.nextSlide {
 .calculator-grid > button:focus {
   background-color: rgba(255, 255, 255, 0.9);
 }
+
+/* MATCHING CARD GAME */
+
+.cardGame {
+  max-width: 100%;
+  background: pink;
+  padding: 10px;
+  overflow: hidden;
+  flex-wrap: wrap;
+
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 40px;
+}
+.card {
+  width: 50px;
+  height: 70px;
+  background-color: #9ff8ff;
+  border: #9b115b solid 1px;
+  font-size: 0.8rem;
+  overflow: hidden;
+  word-break: break-all;
+}
+
+.card:hover {
+  cursor: pointer;
+  transform: rotateY(45deg);
+}

@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-function Search({ title }) {
+function Search({ title, emojiList }) {
   const [search, setSearch] = useState("");
 
   return (

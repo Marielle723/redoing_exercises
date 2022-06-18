@@ -10,6 +10,7 @@ import LoremIpsumGen from "./Components/LoremIpsum_Generator/LoremIpsumGen";
 import Calculator from "./Components/Calculator/Calculator";
 import Slider from "./Components/Slider/Slider";
 import EmojiSearch from "./Components/Emoji Search/EmojiSearch";
+import MatchingCard from "./Components/CardGame/MatchingCard";
 
 import FastGoodCheap from "./Components/FastGoodCheap/FastGoodCheap";
 
@@ -47,7 +48,9 @@ function App() {
           <EmojiSearch />
         </div>
 
-        <div className="side right-bottom">Convertisseurs</div>
+        <div className="side right-bottom">
+          <MatchingCard />
+        </div>
       </div>
 
       <div className="main-container">
