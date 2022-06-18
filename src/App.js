@@ -9,6 +9,7 @@ import BirthdayReminder from "./BirthdayReminder/BirthdayReminder";
 import LoremIpsumGen from "./Components/LoremIpsum_Generator/LoremIpsumGen";
 import Calculator from "./Components/Calculator/Calculator";
 import Slider from "./Components/Slider/Slider";
+import EmojiSearch from "./Components/Emoji Search/EmojiSearch";
 
 import FastGoodCheap from "./Components/FastGoodCheap/FastGoodCheap";
 
@@ -42,7 +43,9 @@ function App() {
           <TodoList />
         </div>
 
-        <div className="side left-bottom">Emoji Search</div>
+        <div className="side left-bottom">
+          <EmojiSearch />
+        </div>
 
         <div className="side right-bottom">Convertisseurs</div>
       </div>

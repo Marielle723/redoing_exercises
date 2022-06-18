@@ -10,8 +10,19 @@ function ArtistForm({ artist, setArtist, setPeople, people }) {
   const [fileImg, setFileImg] = useState(false);
   const [linkImg, setLinkImg] = useState(true);
 
+  const uploadImage = (files) => {
+    const formData = new FormData();
+    formData.append("file", image);
+    formData.append("upload_preset", "kmlqj992");
+
+    axios
+      .post("https://api.cloudinary.com/v1_1/djiovcgny/image/upload", formData)
+      .then((response) => console.log(response));
+  };
+
   const handleSubmit = (e) => {
     e.preventDefault();
+    uploadImage();
 
     const newPeople = [...people];
     newPeople.push({

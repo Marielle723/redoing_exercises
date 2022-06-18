@@ -26,40 +26,43 @@ function FastGoodCheap() {
     setCheckedCheap(!checkedCheap);
   };
   return (
-    <div>
-      <h1>Fast Good Cheap</h1>
+    <div className="fastgoodcheap">
+      <h1 className="text-center">Fast Good Cheap</h1>
       <h4>How do you like your ideal dev</h4>
-      <label>
+      <label className="maj bold">
         <input
           type="checkbox"
           name="fast"
           id="fast"
           onChange={handleFast}
           checked={checkedFast}
+          className="toggle"
         />
         Fast
       </label>
 
-      <label>
+      <label className="maj bold">
         <input
           type="checkbox"
           name="good"
           id="good"
           onChange={handleGood}
           checked={checkedGood}
+          className="toggle"
         />
-        good
+        Good
       </label>
 
-      <label>
+      <label className="maj bold">
         <input
           type="checkbox"
           name="Cheap"
           id="Cheap"
           onChange={handleCheap}
           checked={checkedCheap}
+          className="toggle"
         />
-        cheap
+        Cheap
       </label>
     </div>
   );
