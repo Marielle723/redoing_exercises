@@ -1,5 +1,6 @@
 import "./App.css";
 import { useState } from "react";
+import Header from "./Components/Header/Header";
 import Counter from "./Components/React_Counter/Counter";
 import Bank from "./Components/Bank/Bank";
 import ProgramTV from "./Components/ProgrammeTV/ProgramTV";
@@ -17,6 +18,7 @@ import FastGoodCheap from "./Components/FastGoodCheap/FastGoodCheap";
 function App() {
   return (
     <>
+      <Header />
       <div className="main-container">
         <div className="side letf-top">
           <Counter />
