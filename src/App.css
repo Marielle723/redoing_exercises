@@ -658,38 +658,44 @@ article.nextSlide {
   font-family: "Lucida Sans", "Lucida Sans Regular";
   background-color: black;
   max-height: 100%;
-
+  box-sizing: content-box;
   text-align: center;
   color: white;
 }
 
 .cards-container {
-  max-height: 95%;
-  width: 95%;
+  height: 42vh;
+  width: 90%;
   margin: 0 auto;
-  background: red;
+
   display: grid;
   grid-template-columns: repeat(6, 1fr);
   grid-template-rows: repeat(4, 1fr);
-  gap: 0.5rem;
+
+  background-image: url(/public/img/Alice\ background\ 2.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .card {
   border: white solid 1px;
-  background-color: #01ff96;
+
   display: flex;
   justify-content: center;
   align-items: center;
-  border-radius: 5px;
+
   transform: rotateY(180deg);
   animation: 2s hidecard linear;
   transition: transform 0.5s;
+  border: black 5px solid;
 }
 
 @keyframes hidecard {
   0%,
   70% {
     transform: rotateY(0);
+    background-color: #222;
   }
   100% {
     transform: rotateY(180deg);
@@ -716,6 +722,7 @@ article.nextSlide {
 
 .card.active {
   transform: rotateY(0);
+  background-color: #222;
 }
 
 .card.correct {
