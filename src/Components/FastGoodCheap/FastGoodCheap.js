@@ -31,7 +31,7 @@ function FastGoodCheap() {
       <h4>How do you like your ideal dev</h4>
       <div className="fgc-wrapper">
         <div>
-          <label className="switch red">
+          <label className={checkedFast ? `switch red` : "switch"}>
             <input
               type="checkbox"
               name="fast"
@@ -46,7 +46,7 @@ function FastGoodCheap() {
         </div>
 
         <div>
-          <label className="switch green">
+          <label className={checkedGood ? "switch green" : "switch"}>
             <input
               type="checkbox"
               name="good"
@@ -61,7 +61,7 @@ function FastGoodCheap() {
         </div>
 
         <div>
-          <label className="switch blue">
+          <label className={checkedCheap ? "switch blue" : "switch"}>
             <input
               type="checkbox"
               name="Cheap"

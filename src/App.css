@@ -400,7 +400,9 @@ input[type="radio"].tesla-radio:checked + label {
   position: relative;
   display: inline-block;
   width: 44px;
-  height: 20px;
+  height: 18px;
+  background-color: #aaa;
+  border-radius: 45px;
 }
 
 .fastgoodcheap .switch input {
@@ -416,38 +418,34 @@ input[type="radio"].tesla-radio:checked + label {
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: #aaa;
 }
 
 .slider:before {
   position: absolute;
   content: "";
-  height: 17px;
+  height: 20px;
   width: 20px;
-  left: 2px;
-  bottom: 2px;
+  left: 0px;
+  bottom: -1px;
   background-color: #fff;
-}
-
-.fastgoodcheap input:checked + .slider {
-  background-color: rgb(206, 72, 72);
+  border-radius: 50%;
 }
 
 .fastgoodcheap input:checked + .slider:before {
-  transform: translateX(20px);
+  transform: translateX(25px);
   transition: 0.4s;
 }
 
 .fastgoodcheap .red {
-  background-color: red;
+  background-color: rgb(204, 79, 79);
 }
 
 .fastgoodcheap .green {
-  background-color: green;
+  background-color: rgb(77, 219, 77);
 }
 
 .fastgoodcheap .blue {
-  background-color: blue;
+  background-color: rgb(101, 101, 207);
 }
 
 .text-center {
