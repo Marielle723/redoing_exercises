@@ -6,7 +6,7 @@ function Header() {
     <div className="App-header">
       <img
         src={wonderland}
-        alt="header when writting React in wonderland, fell into the deep hole of tutorial hell"
+        alt="header when writting React in wonderland, welcome into the deep hole of tutorial hell"
       />
     </div>
   );

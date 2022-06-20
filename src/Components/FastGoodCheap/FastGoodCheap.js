@@ -29,41 +29,52 @@ function FastGoodCheap() {
     <div className="fastgoodcheap">
       <h1 className="text-center">Fast Good Cheap</h1>
       <h4>How do you like your ideal dev</h4>
-      <label className="maj bold">
-        <input
-          type="checkbox"
-          name="fast"
-          id="fast"
-          onChange={handleFast}
-          checked={checkedFast}
-          className="toggle"
-        />
-        Fast
-      </label>
+      <div className="fgc-wrapper">
+        <div>
+          <label className="switch red">
+            <input
+              type="checkbox"
+              name="fast"
+              id="fast"
+              onChange={handleFast}
+              checked={checkedFast}
+              className="toggle"
+            />
+            <span className="slider" />
+          </label>
+          <p className="maj bold">FAST</p>
+        </div>
 
-      <label className="maj bold">
-        <input
-          type="checkbox"
-          name="good"
-          id="good"
-          onChange={handleGood}
-          checked={checkedGood}
-          className="toggle"
-        />
-        Good
-      </label>
+        <div>
+          <label className="switch green">
+            <input
+              type="checkbox"
+              name="good"
+              id="good"
+              onChange={handleGood}
+              checked={checkedGood}
+              className="toggle"
+            />
+            <span className="slider" />
+          </label>
+          <p className="maj bold">GOOD</p>
+        </div>
 
-      <label className="maj bold">
-        <input
-          type="checkbox"
-          name="Cheap"
-          id="Cheap"
-          onChange={handleCheap}
-          checked={checkedCheap}
-          className="toggle"
-        />
-        Cheap
-      </label>
+        <div>
+          <label className="switch blue">
+            <input
+              type="checkbox"
+              name="Cheap"
+              id="Cheap"
+              onChange={handleCheap}
+              checked={checkedCheap}
+              className="toggle"
+            />
+            <span className="slider" />
+          </label>
+          <p className="maj bold">CHEAP</p>
+        </div>
+      </div>
     </div>
   );
 }
