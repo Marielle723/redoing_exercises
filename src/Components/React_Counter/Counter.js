@@ -1,7 +1,23 @@
 import React, { useState } from "react";
+import woman from "./woman.png";
+import potion from "./Potion.png";
+import cupcake from "./cupcake.png";
 
 function Counter() {
-  const [counter, setCounter] = useState(0);
+  const [counterPotion, setCounterPotion] = useState(0);
+  const [counterCake, setCounterCake] = useState(0);
+  const [flag, setFlag] = useState("");
+
+  const handlePotionClick = () => {
+    setCounterPotion(counterPotion + 1);
+    setFlag("potion");
+  };
+
+  const handleCakeClick = () => {
+    setCounterCake(counterCake + 1);
+    setFlag("cake");
+  };
+
   return (
     <>
       <header>
@@ -12,18 +28,34 @@ function Counter() {
 
       <main>
         <div className="counter-wrapper">
-          <div className="counter">
-            {counter > 0 && (
-              <button onClick={() => setCounter(counter - 1)}>&#10134;</button>
-            )}
-            <p className="counter-var">{counter}</p>
+          <div className="img-container">
+            <div className="counter">
+              <img src={potion} onClick={handlePotionClick} />
 
-            {counter < 10 && (
-              <button onClick={() => setCounter(counter + 1)}>&#10133;</button>
-            )}
+              <div className="counter-var">
+                {flag === "potion" ? (
+                  <span>{counterPotion} sips</span>
+                ) : (
+                  <span>{counterCake} bites</span>
+                )}
+              </div>
+
+              <img src={cupcake} onClick={handleCakeClick} />
+            </div>
+            <img
+              className="woman-anime"
+              src={woman}
+              alt="african woman with turban and makeup"
+            />
           </div>
 
-          <p className="reset" onClick={() => setCounter(0)}>
+          <p
+            className="reset"
+            onClick={() => {
+              setCounterCake(0);
+              setCounterPotion(0);
+            }}
+          >
             reset
           </p>
         </div>

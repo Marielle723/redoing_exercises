@@ -95,12 +95,37 @@ p {
 
 /* REACT COUNTER */
 
+.img-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  /* border: solid pink 2px; */
+}
+
+.woman-anime {
+  width: 50px;
+  object-fit: cover;
+}
+
 .counter-wrapper {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
   vertical-align: baseline;
+  border: #9b115b solid 3px;
+  width: 100%;
+}
+
+.counter > img {
+  box-shadow: 2px 2px 6px rgba(45, 38, 38, 0.75);
+  width: 50px;
+  height: 50px;
+}
+
+.counter > img:hover {
+  transform: scale(0.95);
 }
 
 .counter {
@@ -111,8 +136,8 @@ p {
 }
 
 .counter-var {
-  width: 50px;
-  height: 50px;
+  width: 100px;
+  height: 100px;
   background-color: rebeccapurple;
   color: white;
   display: flex;
