@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useRef } from "react";
 import woman from "./woman.png";
 import potion from "./Potion.png";
 import cupcake from "./cupcake.png";
@@ -43,6 +43,12 @@ function Counter() {
               <img src={cupcake} onClick={handleCakeClick} />
             </div>
             <img
+              style={{
+                width:
+                  flag === "potion"
+                    ? `calc(50px - 3*${counterPotion}px)`
+                    : `calc(50px + 3*${counterCake}px)`,
+              }}
               className="woman-anime"
               src={woman}
               alt="african woman with turban and makeup"

@@ -115,6 +115,7 @@ p {
   align-items: center;
   vertical-align: baseline;
   border: #9b115b solid 3px;
+  background-color: #000;
   width: 100%;
 }
 
