@@ -22,19 +22,19 @@ function App() {
       <Header />
       <div className="main-container">
         <div className="side letf-top">
-          <Counter />
+          <MatchingCard />
         </div>
 
         <div className="side right-top">
-          <Bank />
+          <Counter />
         </div>
 
         <div className="side left-bottom">
-          <ProgramTV />
+          <BirthdayReminder />
         </div>
 
         <div className="side right-bottom">
-          <TeslaConfig />
+          <Slider />
         </div>
       </div>
 
@@ -52,13 +52,13 @@ function App() {
         </div>
 
         <div className="side right-bottom">
-          <MatchingCard />
+          <Bank />
         </div>
       </div>
 
       <div className="main-container">
         <div className="side letf-top">
-          <BirthdayReminder />
+          <ProgramTV />
         </div>
 
         <div className="side right-top">
@@ -66,7 +66,7 @@ function App() {
         </div>
 
         <div className="side left-bottom">
-          <Slider />
+          <TeslaConfig />
         </div>
 
         <div className="side right-bottom">
