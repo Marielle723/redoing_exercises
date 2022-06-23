@@ -1,0 +1,14 @@
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:wght@300&family=Montserrat:wght@200&family=Poppins:wght@200;300&display=swap");
+
+a {
+  text-decoration: inherit;
+  color: inherit;
+}
+
+.app-container {
+  min-height: 98.5vh;
+  width: 98%;
+  border: 8px solid #39445a93;
+  padding: 5px;
+  margin: 20px auto;
+}

@@ -12,6 +12,7 @@ import Calculator from "./Components/Calculator/Calculator";
 import Slider from "./Components/Slider/Slider";
 import EmojiSearch from "./Components/Emoji Search/EmojiSearch";
 import MatchingCard from "./Components/CardGame/MatchingCard";
+import TrivialPursuit from "./TrivialPursuit/TrivialPursuit";
 
 import FastGoodCheap from "./Components/FastGoodCheap/FastGoodCheap";
 
@@ -70,6 +71,12 @@ function App() {
 
         <div className="side right-bottom">
           <Calculator />
+        </div>
+
+        <div className="main-container">
+          <div className="app-container">
+            <TrivialPursuit />
+          </div>
         </div>
       </div>
     </>

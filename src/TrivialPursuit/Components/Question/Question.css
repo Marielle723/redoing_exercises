@@ -1,0 +1,31 @@
+.singleOption {
+  width: 46%;
+  height: 50px;
+  padding: 15px 20px;
+  margin: 10px;
+  box-shadow: 0 0 2px black;
+}
+
+@media (max-widtg: 614px) {
+  .singleOption {
+    width: 100%;
+  }
+}
+
+.select {
+  background-color: green;
+  color: white;
+  box-shadow: 0 0 1px black;
+}
+
+.wrong {
+  background-color: red;
+  color: white;
+  box-shadow: 0 0 1px black;
+}
+
+.controls {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+}
